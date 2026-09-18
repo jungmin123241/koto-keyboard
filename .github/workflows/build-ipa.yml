@@ -36,6 +36,25 @@ jobs:
           swift test 2>&1 | tee artifacts/swift-test.log
       - name: Build iPhone app and package keyboard extension
         run: bash Scripts/build-unsigned-ipa.sh
+      - name: Summarize build diagnostics
+        if: always()
+        run: |
+          if [[ -f artifacts/iphone-build.log ]]; then
+            {
+              echo '### iPhone build log (tail)'
+              echo '```text'
+              tail -n 160 artifacts/iphone-build.log
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [[ -f artifacts/swift-test.log ]]; then
+            {
+              echo '### Swift test log (tail)'
+              echo '```text'
+              tail -n 80 artifacts/swift-test.log
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
       - name: Downloadable IPA for Windows signing
         uses: actions/upload-artifact@v4
         with:
