@@ -187,7 +187,11 @@ final class KeyboardViewController: UIInputViewController {
             let old = composer.text
             composer.append(value.first!)
             if !replaceComposition(old: old, new: composer.text) {
-                composer.reset(); input.reset(); document.insertText(value); input.set(value)
+                // Never fall back to the physical jamo key: that is what makes
+                // the host show strings such as "ㅇㅏㄴ". Keep the composed
+                // value as the only text exposed by this keyboard.
+                let composed = composer.text
+                composer.reset(); input.reset(); document.insertText(composed); input.set(composed)
             }
         } else {
             composer.reset(); document.insertText(value); input.set(input.typed + value)
@@ -200,10 +204,9 @@ final class KeyboardViewController: UIInputViewController {
         // more reliable than asking the host to delete only a changed suffix:
         // documentContextBeforeInput can briefly lag behind insertText on iOS.
         // Falling back to insertText in that window would expose raw jamo.
-        if !old.isEmpty, let before = document.before,
-           !DocumentSnapshot.exact(String(before.suffix(old.count)), old) {
-            return false
-        }
+        // The key-button action verifies that the document did not change
+        // since our last edit. The document context itself can still lag one
+        // edit behind, so do not reject the owned replacement based on it.
         for _ in old { document.deleteBackward() }
         document.insertText(new)
         let base = old.isEmpty ? input.typed : String(input.typed.dropLast(old.count))
