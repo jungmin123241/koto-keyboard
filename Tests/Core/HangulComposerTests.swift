@@ -10,6 +10,14 @@ final class HangulComposerTests: XCTestCase {
         return composer.text
     }
     func testGreeting() { XCTAssertEqual(compose("ㅇㅏㄴㄴㅕㅇㅎㅏㅅㅔㅇㅛ"), "안녕하세요") }
+    func testGreetingBuildsAsComposedTextAtEveryKeystroke() {
+        var composer = HangulComposer()
+        let expected = ["ㅇ", "아", "안", "안ㄴ", "안녀", "안녕"]
+        for (key, value) in zip("ㅇㅏㄴㄴㅕㅇ", expected) {
+            composer.append(key)
+            XCTAssertEqual(composer.text, value)
+        }
+    }
     func testThanks() { XCTAssertEqual(compose("ㄱㅏㅁㅅㅏㅎㅏㅂㄴㅣㄷㅏ"), "감사합니다") }
     func testCompoundVowels() {
         XCTAssertEqual(compose("ㄱㅗㅏ"), "과")
