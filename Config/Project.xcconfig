@@ -1,0 +1,9 @@
+// Set these identifiers and DEVELOPMENT_TEAM before signing for a device.
+APP_BUNDLE_IDENTIFIER = com.example.KotoKeyboard
+APP_GROUP_IDENTIFIER = group.com.example.KotoKeyboard
+KEYCHAIN_GROUP_IDENTIFIER = com.example.KotoKeyboard.shared
+DEVELOPMENT_TEAM =
+IPHONEOS_DEPLOYMENT_TARGET = 18.0
+SWIFT_VERSION = 5.0
+MARKETING_VERSION = 0.1.0
+CURRENT_PROJECT_VERSION = 1

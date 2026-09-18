@@ -1,0 +1,55 @@
+name: Build iPhone IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths-ignore:
+      - '**.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: unsigned-ipa-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify project and relay
+        run: |
+          node --test Server/relay.test.mjs Scripts/project.test.mjs
+          python3 -m unittest discover -s Scripts -p 'test_*.py' -v
+          node Scripts/generate-project.mjs
+          git diff --exit-code -- KotoKeyboard.xcodeproj
+      - name: Run Swift unit tests
+        run: |
+          set -o pipefail
+          mkdir -p artifacts
+          swift test 2>&1 | tee artifacts/swift-test.log
+      - name: Build iPhone app and package keyboard extension
+        run: bash Scripts/build-unsigned-ipa.sh
+      - name: Downloadable IPA for Windows signing
+        uses: actions/upload-artifact@v4
+        with:
+          name: KotoKeyboard-FreeDevice-unsigned
+          path: |
+            artifacts/KotoKeyboard-FreeDevice-unsigned.ipa
+            artifacts/KotoKeyboard-FreeDevice-unsigned.ipa.sha256
+          if-no-files-found: error
+          retention-days: 3
+      - name: Upload build diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ipa-build-logs
+          path: artifacts/*.log
+          if-no-files-found: ignore
+          retention-days: 3

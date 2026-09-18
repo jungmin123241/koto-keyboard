@@ -1,0 +1,1154 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = "1";
+	"classes" = {
+
+	};
+	"objectVersion" = "56";
+	"objects" = {
+		"B2957266D4E6D3669903E689" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/AppEntry/KotoKeyboardApp.swift";
+			"sourceTree" = "<group>";
+		};
+		"E62D050013D6CE979B89AAD5" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/Features/HomeView.swift";
+			"sourceTree" = "<group>";
+		};
+		"9BE394201301D4F72927D500" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "App/Resources/Info.plist";
+			"sourceTree" = "<group>";
+		};
+		"6B7C5F8432B968C375C9E6E7" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.entitlements";
+			"path" = "Config/App.entitlements";
+			"sourceTree" = "<group>";
+		};
+		"DE27399195AA6A4B72BBEBC7" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.entitlements";
+			"path" = "Config/Keyboard.entitlements";
+			"sourceTree" = "<group>";
+		};
+		"EE1E752050BF380B88186C3D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xcconfig";
+			"path" = "Config/Project.xcconfig";
+			"sourceTree" = "<group>";
+		};
+		"FA0EDA251DD1E8A992E41144" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "KeyboardExtension/Info.plist";
+			"sourceTree" = "<group>";
+		};
+		"EB58FAD42E98DAFC3C51C386" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "KeyboardExtension/Input/TextDocumentProxyAdapter.swift";
+			"sourceTree" = "<group>";
+		};
+		"EA05BA0C4532BDD72DAFDB0A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "KeyboardExtension/KeyboardViewController.swift";
+			"sourceTree" = "<group>";
+		};
+		"83BD0F9DD716A9EB2E291B13" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "KeyboardExtension/UI/KeyboardLayout.swift";
+			"sourceTree" = "<group>";
+		};
+		"9926AE77E18C418A8B49700E" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Shared/Core/DocumentEditing.swift";
+			"sourceTree" = "<group>";
+		};
+		"11BD3126D8B8FD48B6700BEB" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Shared/Core/HangulComposer.swift";
+			"sourceTree" = "<group>";
+		};
+		"649D1E94B903C54BF20FC13A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Shared/Core/Settings.swift";
+			"sourceTree" = "<group>";
+		};
+		"6C041F1222678E5437D51A8F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Shared/Core/Translation.swift";
+			"sourceTree" = "<group>";
+		};
+		"D2482046B240EBD912F2C629" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Shared/Core/TranslationCoordinator.swift";
+			"sourceTree" = "<group>";
+		};
+		"06AA6B0F239AB1AE13BB609C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Shared/Platform/SharedConfiguration.swift";
+			"sourceTree" = "<group>";
+		};
+		"D219FDE42713BE64F88DB7A0" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "Shared/Resources/PrivacyInfo.xcprivacy";
+			"sourceTree" = "<group>";
+		};
+		"11AAA2BA0770882B8ABE428D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "TestHost/TestHostApp.swift";
+			"sourceTree" = "<group>";
+		};
+		"4EF7DC2CDC197AF9E7F2AEF8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Tests/Core/DocumentEditingTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"491039E68581D0A414DFDEEB" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Tests/Core/HangulComposerTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"26DF275F68A2605CC9622B91" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Tests/Core/RemoteTranslationTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"625107C399EB69DD487AA463" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Tests/Core/SettingsTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"4201A790C58B0628630BACF1" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Tests/Core/TranslationCoordinatorTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"6A092D14F7E18A1A7053C650" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "UITests/KotoKeyboardUITests.swift";
+			"sourceTree" = "<group>";
+		};
+		"9E153618523FC22CCC7FDC66" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"includeInIndex" = "0";
+			"path" = "KotoKeyboard.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"C0BADF242E8AA165F3DEF313" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.app-extension";
+			"includeInIndex" = "0";
+			"path" = "KotoKeyboardExtension.appex";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"CC7418C21CEFC7F679FA21FC" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"includeInIndex" = "0";
+			"path" = "KeyboardCoreTests.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"3255499103AA4311104A7097" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"includeInIndex" = "0";
+			"path" = "KotoKeyboardUITests.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"0504D57F80E9503029B38D92" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"includeInIndex" = "0";
+			"path" = "KeyboardTestHost.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"0A3E27B8CA818264D75C8D81" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				"9E153618523FC22CCC7FDC66",
+				"C0BADF242E8AA165F3DEF313",
+				"CC7418C21CEFC7F679FA21FC",
+				"3255499103AA4311104A7097",
+				"0504D57F80E9503029B38D92",
+			);
+			"name" = "Products";
+			"sourceTree" = "<group>";
+		};
+		"0035FE99EA2940F7FA633A58" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				"B2957266D4E6D3669903E689",
+				"E62D050013D6CE979B89AAD5",
+				"9BE394201301D4F72927D500",
+				"6B7C5F8432B968C375C9E6E7",
+				"DE27399195AA6A4B72BBEBC7",
+				"EE1E752050BF380B88186C3D",
+				"FA0EDA251DD1E8A992E41144",
+				"EB58FAD42E98DAFC3C51C386",
+				"EA05BA0C4532BDD72DAFDB0A",
+				"83BD0F9DD716A9EB2E291B13",
+				"9926AE77E18C418A8B49700E",
+				"11BD3126D8B8FD48B6700BEB",
+				"649D1E94B903C54BF20FC13A",
+				"6C041F1222678E5437D51A8F",
+				"D2482046B240EBD912F2C629",
+				"06AA6B0F239AB1AE13BB609C",
+				"D219FDE42713BE64F88DB7A0",
+				"11AAA2BA0770882B8ABE428D",
+				"4EF7DC2CDC197AF9E7F2AEF8",
+				"491039E68581D0A414DFDEEB",
+				"26DF275F68A2605CC9622B91",
+				"625107C399EB69DD487AA463",
+				"4201A790C58B0628630BACF1",
+				"6A092D14F7E18A1A7053C650",
+				"0A3E27B8CA818264D75C8D81",
+			);
+			"sourceTree" = "<group>";
+		};
+		"184B519F8E1416CCE38CFFD7" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Debug";
+			"buildSettings" = {
+				"SDKROOT" = "iphoneos";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "targeted";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"A824290273A346217D9BE6F4" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Release";
+			"buildSettings" = {
+				"SDKROOT" = "iphoneos";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "targeted";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"9DF21617A7475E2C7DF99A97" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "FreeDevice";
+			"buildSettings" = {
+				"SDKROOT" = "iphoneos";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "targeted";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG FREE_DEVICE_BUILD";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"1C92AB85867A62A69844F213" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"184B519F8E1416CCE38CFFD7",
+				"A824290273A346217D9BE6F4",
+				"9DF21617A7475E2C7DF99A97",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"1EE3B0A1C3D0DE644A9536DD" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "B2957266D4E6D3669903E689";
+		};
+		"59E77022D3D64F2AA402EB46" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "E62D050013D6CE979B89AAD5";
+		};
+		"7F4AFD10AE2032FD62E9D65D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9926AE77E18C418A8B49700E";
+		};
+		"5DDFC2B97A3092D48CD69787" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "11BD3126D8B8FD48B6700BEB";
+		};
+		"A7C1AE630B0CED50BB01712E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "649D1E94B903C54BF20FC13A";
+		};
+		"ECC07EE1BFB07BD9E6376D04" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6C041F1222678E5437D51A8F";
+		};
+		"4A9A241285B70D5758078210" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D2482046B240EBD912F2C629";
+		};
+		"5EB42ED02E0BF6D9CA2B8900" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "06AA6B0F239AB1AE13BB609C";
+		};
+		"B0D7359ABA644F552311BF5D" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"1EE3B0A1C3D0DE644A9536DD",
+				"59E77022D3D64F2AA402EB46",
+				"7F4AFD10AE2032FD62E9D65D",
+				"5DDFC2B97A3092D48CD69787",
+				"A7C1AE630B0CED50BB01712E",
+				"ECC07EE1BFB07BD9E6376D04",
+				"4A9A241285B70D5758078210",
+				"5EB42ED02E0BF6D9CA2B8900",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"8B2FD6AC513A809BF4FCD59E" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"AC42EC57AE5C8EF97AE2969A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D219FDE42713BE64F88DB7A0";
+		};
+		"078B5E182F793E8E17FBECE2" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"AC42EC57AE5C8EF97AE2969A",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"C37D184829CBC8E88A29A0AB" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "244210E48437B6556980A702";
+			"proxyType" = "1";
+			"remoteGlobalIDString" = "90CDBFA87EF54A800D8CAFDF";
+			"remoteInfo" = "KotoKeyboardExtension";
+		};
+		"138C9D120D5A690C37E5066E" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "90CDBFA87EF54A800D8CAFDF";
+			"targetProxy" = "C37D184829CBC8E88A29A0AB";
+		};
+		"D9BA186364CD46DA2A252BBC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C0BADF242E8AA165F3DEF313";
+			"settings" = {
+				"ATTRIBUTES" = (
+					"RemoveHeadersOnCopy",
+				);
+			};
+		};
+		"7E19294EE969708E65C34544" = {
+			"isa" = "PBXCopyFilesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"dstPath" = "";
+			"dstSubfolderSpec" = "13";
+			"files" = (
+				"D9BA186364CD46DA2A252BBC",
+			);
+			"name" = "Embed App Extensions";
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"CE584E0529664B984E269478" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER)";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"INFOPLIST_FILE" = "App/Resources/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/App.entitlements";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"C4C33CA56860174F3111E95C" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER)";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"INFOPLIST_FILE" = "App/Resources/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/App.entitlements";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"E9E64C16A67CB8C5A243871B" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "FreeDevice";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER)";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"INFOPLIST_FILE" = "App/Resources/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG FREE_DEVICE_BUILD";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"485AFE4B423DCD279FC41E7D" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"CE584E0529664B984E269478",
+				"C4C33CA56860174F3111E95C",
+				"E9E64C16A67CB8C5A243871B",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"2E19771196BEC859DFC5227A" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "485AFE4B423DCD279FC41E7D";
+			"buildPhases" = (
+				"B0D7359ABA644F552311BF5D",
+				"8B2FD6AC513A809BF4FCD59E",
+				"078B5E182F793E8E17FBECE2",
+				"7E19294EE969708E65C34544",
+			);
+			"buildRules" = (
+
+			);
+			"dependencies" = (
+				"138C9D120D5A690C37E5066E",
+			);
+			"name" = "KotoKeyboard";
+			"productName" = "KotoKeyboard";
+			"productReference" = "9E153618523FC22CCC7FDC66";
+			"productType" = "com.apple.product-type.application";
+		};
+		"20013FD00C0323B1B8AC51CC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "EB58FAD42E98DAFC3C51C386";
+		};
+		"97E92C4321120F85A2A8E224" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "EA05BA0C4532BDD72DAFDB0A";
+		};
+		"25F0BA128C523BA93374F67A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "83BD0F9DD716A9EB2E291B13";
+		};
+		"9660E7D70E93932467EC106A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9926AE77E18C418A8B49700E";
+		};
+		"5D9A152312DB6242263DCBC1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "11BD3126D8B8FD48B6700BEB";
+		};
+		"6B6E6B7555E39B7C2A161664" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "649D1E94B903C54BF20FC13A";
+		};
+		"104B63AB90AFD34052772A35" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6C041F1222678E5437D51A8F";
+		};
+		"024B642837F897B2AC5B082D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D2482046B240EBD912F2C629";
+		};
+		"63238E95636ABE891723EF7B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "06AA6B0F239AB1AE13BB609C";
+		};
+		"4D5146B01C72C0CCE8F0DEC5" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"20013FD00C0323B1B8AC51CC",
+				"97E92C4321120F85A2A8E224",
+				"25F0BA128C523BA93374F67A",
+				"9660E7D70E93932467EC106A",
+				"5D9A152312DB6242263DCBC1",
+				"6B6E6B7555E39B7C2A161664",
+				"104B63AB90AFD34052772A35",
+				"024B642837F897B2AC5B082D",
+				"63238E95636ABE891723EF7B",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"2045CE84346CFA6D1A858447" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"41C003CF0CE29744E4B4668B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D219FDE42713BE64F88DB7A0";
+		};
+		"8016EA7B4634DD6B234B02A3" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"41C003CF0CE29744E4B4668B",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"E7390CFFEFAAD7AAEFBCC30E" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).keyboard";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"INFOPLIST_FILE" = "KeyboardExtension/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/Keyboard.entitlements";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"ACCFD7C05FFA41AB8B981023" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).keyboard";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"INFOPLIST_FILE" = "KeyboardExtension/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"CODE_SIGN_ENTITLEMENTS" = "Config/Keyboard.entitlements";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"AD78CDCC8B73CD752A1086EB" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "FreeDevice";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).keyboard";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"INFOPLIST_FILE" = "KeyboardExtension/Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG FREE_DEVICE_BUILD";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"290A49097F3E000F7FB56127" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"E7390CFFEFAAD7AAEFBCC30E",
+				"ACCFD7C05FFA41AB8B981023",
+				"AD78CDCC8B73CD752A1086EB",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"90CDBFA87EF54A800D8CAFDF" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "290A49097F3E000F7FB56127";
+			"buildPhases" = (
+				"4D5146B01C72C0CCE8F0DEC5",
+				"2045CE84346CFA6D1A858447",
+				"8016EA7B4634DD6B234B02A3",
+			);
+			"buildRules" = (
+
+			);
+			"dependencies" = (
+
+			);
+			"name" = "KotoKeyboardExtension";
+			"productName" = "KotoKeyboardExtension";
+			"productReference" = "C0BADF242E8AA165F3DEF313";
+			"productType" = "com.apple.product-type.app-extension";
+		};
+		"49F6885E7A59361AB15F8BFC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9926AE77E18C418A8B49700E";
+		};
+		"7570B95BB3B7BD0CF1945B00" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "11BD3126D8B8FD48B6700BEB";
+		};
+		"12FEAFBEB7B6F7BD91476213" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "649D1E94B903C54BF20FC13A";
+		};
+		"B7B38916F1EFB3D87E59444A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6C041F1222678E5437D51A8F";
+		};
+		"F3078296B489EB41C89095C6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D2482046B240EBD912F2C629";
+		};
+		"75AD421B3640213D55093A00" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4EF7DC2CDC197AF9E7F2AEF8";
+		};
+		"C38EC6D7C15A50D747E1E62B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "491039E68581D0A414DFDEEB";
+		};
+		"893CF1E5F061DA65576D5B41" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "26DF275F68A2605CC9622B91";
+		};
+		"16ED905E12D495EEA0D5FE7B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "625107C399EB69DD487AA463";
+		};
+		"533B2218CAD92913A8E4D543" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4201A790C58B0628630BACF1";
+		};
+		"076FFBAEE48A08240B1619DD" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"49F6885E7A59361AB15F8BFC",
+				"7570B95BB3B7BD0CF1945B00",
+				"12FEAFBEB7B6F7BD91476213",
+				"B7B38916F1EFB3D87E59444A",
+				"F3078296B489EB41C89095C6",
+				"75AD421B3640213D55093A00",
+				"C38EC6D7C15A50D747E1E62B",
+				"893CF1E5F061DA65576D5B41",
+				"16ED905E12D495EEA0D5FE7B",
+				"533B2218CAD92913A8E4D543",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"D4550B1B80E312841EE77AC9" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"D0D538946DC1B332C6F613CB" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"56450A6E0A4F2C17CB074C2C" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).core-tests";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"A9134409B8801B1254FE9607" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).core-tests";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"601788D4F58A47FB51C93A8B" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "FreeDevice";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).core-tests";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG FREE_DEVICE_BUILD";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"E765030B627D6BF30C2B23B4" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"56450A6E0A4F2C17CB074C2C",
+				"A9134409B8801B1254FE9607",
+				"601788D4F58A47FB51C93A8B",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"22008FE912F67BA413B306A8" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "E765030B627D6BF30C2B23B4";
+			"buildPhases" = (
+				"076FFBAEE48A08240B1619DD",
+				"D4550B1B80E312841EE77AC9",
+				"D0D538946DC1B332C6F613CB",
+			);
+			"buildRules" = (
+
+			);
+			"dependencies" = (
+
+			);
+			"name" = "KeyboardCoreTests";
+			"productName" = "KeyboardCoreTests";
+			"productReference" = "CC7418C21CEFC7F679FA21FC";
+			"productType" = "com.apple.product-type.bundle.unit-test";
+		};
+		"E130F0AB6632C0C29C9EDD86" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6A092D14F7E18A1A7053C650";
+		};
+		"80940CB1313779F0BC5F03D4" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"E130F0AB6632C0C29C9EDD86",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"CDB466D909DC7E76331464BC" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"6803C166F391DD0886B691C1" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"8876662768EED790E9A08E0E" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "244210E48437B6556980A702";
+			"proxyType" = "1";
+			"remoteGlobalIDString" = "2E19771196BEC859DFC5227A";
+			"remoteInfo" = "KotoKeyboard";
+		};
+		"17F521D16F281E0FBB0F6B0A" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "2E19771196BEC859DFC5227A";
+			"targetProxy" = "8876662768EED790E9A08E0E";
+		};
+		"E202FA16E5332B273901392A" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).ui-tests";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"TEST_TARGET_NAME" = "KotoKeyboard";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"54B06999092579FCCBBAA7A1" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).ui-tests";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"TEST_TARGET_NAME" = "KotoKeyboard";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"8F8EAF27F211EEB670DE7CB2" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "FreeDevice";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).ui-tests";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"TEST_TARGET_NAME" = "KotoKeyboard";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG FREE_DEVICE_BUILD";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"FDF28B220A0965F368035762" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"E202FA16E5332B273901392A",
+				"54B06999092579FCCBBAA7A1",
+				"8F8EAF27F211EEB670DE7CB2",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"793E3E97B8BDEAEA76C7B03F" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "FDF28B220A0965F368035762";
+			"buildPhases" = (
+				"80940CB1313779F0BC5F03D4",
+				"CDB466D909DC7E76331464BC",
+				"6803C166F391DD0886B691C1",
+			);
+			"buildRules" = (
+
+			);
+			"dependencies" = (
+				"17F521D16F281E0FBB0F6B0A",
+			);
+			"name" = "KotoKeyboardUITests";
+			"productName" = "KotoKeyboardUITests";
+			"productReference" = "3255499103AA4311104A7097";
+			"productType" = "com.apple.product-type.bundle.ui-testing";
+		};
+		"9E6C8D1143B4686B84CFEF60" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "11AAA2BA0770882B8ABE428D";
+		};
+		"C5ACB790A22B90299381665A" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"9E6C8D1143B4686B84CFEF60",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"0BB58CD463D3D4F3E2FA54B4" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"9D9ECBF4969912D946E006BB" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"3AD8FFA47BB2D77800DCEF0F" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).test-host";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations" = "UIInterfaceOrientationPortrait";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"25CC6D72C5A1CF7356CA99D3" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).test-host";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations" = "UIInterfaceOrientationPortrait";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+		};
+		"8C65262F6DB219E0713EE848" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "EE1E752050BF380B88186C3D";
+			"name" = "FreeDevice";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(APP_BUNDLE_IDENTIFIER).test-host";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations" = "UIInterfaceOrientationPortrait";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG FREE_DEVICE_BUILD";
+				"ENABLE_TESTABILITY" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+			};
+		};
+		"70EC29929F323A77F57C2332" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"3AD8FFA47BB2D77800DCEF0F",
+				"25CC6D72C5A1CF7356CA99D3",
+				"8C65262F6DB219E0713EE848",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"8EB1DA13D9CC29D954B3511A" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "70EC29929F323A77F57C2332";
+			"buildPhases" = (
+				"C5ACB790A22B90299381665A",
+				"0BB58CD463D3D4F3E2FA54B4",
+				"9D9ECBF4969912D946E006BB",
+			);
+			"buildRules" = (
+
+			);
+			"dependencies" = (
+
+			);
+			"name" = "KeyboardTestHost";
+			"productName" = "KeyboardTestHost";
+			"productReference" = "0504D57F80E9503029B38D92";
+			"productType" = "com.apple.product-type.application";
+		};
+		"244210E48437B6556980A702" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"BuildIndependentTargetsInParallel" = "YES";
+				"LastUpgradeCheck" = "1600";
+			};
+			"buildConfigurationList" = "1C92AB85867A62A69844F213";
+			"compatibilityVersion" = "Xcode 14.0";
+			"developmentRegion" = "ko";
+			"knownRegions" = (
+				"ko",
+				"en",
+				"Base",
+			);
+			"mainGroup" = "0035FE99EA2940F7FA633A58";
+			"productRefGroup" = "0A3E27B8CA818264D75C8D81";
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = (
+				"2E19771196BEC859DFC5227A",
+				"90CDBFA87EF54A800D8CAFDF",
+				"22008FE912F67BA413B306A8",
+				"793E3E97B8BDEAEA76C7B03F",
+				"8EB1DA13D9CC29D954B3511A",
+			);
+		};
+	};
+	"rootObject" = "244210E48437B6556980A702";
+}

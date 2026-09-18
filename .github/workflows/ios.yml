@@ -1,0 +1,35 @@
+name: iOS and relay verification
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  verify:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Relay and project checks
+        run: node --test Server/relay.test.mjs Scripts/project.test.mjs
+      - name: Check project generation is reproducible
+        run: |
+          node Scripts/generate-project.mjs
+          git diff --exit-code -- KotoKeyboard.xcodeproj
+      - name: Pure Swift tests
+        run: swift test
+      - name: Build app and embedded keyboard
+        run: |
+          xcodebuild -project KotoKeyboard.xcodeproj -scheme KotoKeyboard -configuration Debug -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+          xcodebuild -project KotoKeyboard.xcodeproj -scheme KotoKeyboard-FreeDevice -configuration FreeDevice -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+      - name: Select available iOS 18 or newer iPhone simulator
+        run: |
+          xcrun simctl list devices available --json > /tmp/koto-simulators.json
+          python3 Scripts/select-simulator.py /tmp/koto-simulators.json >> "$GITHUB_ENV"
+      - name: Run XCTest and UI tests
+        run: |
+          mkdir -p artifacts
+          xcodebuild -project KotoKeyboard.xcodeproj -scheme KotoKeyboard -configuration Debug -destination "$SIMULATOR" -resultBundlePath artifacts/Tests.xcresult CODE_SIGNING_ALLOWED=NO test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: xcode-test-results
+          path: artifacts/
