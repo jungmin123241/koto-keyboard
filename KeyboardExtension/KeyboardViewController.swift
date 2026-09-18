@@ -196,15 +196,16 @@ final class KeyboardViewController: UIInputViewController {
     }
 
     private func replaceComposition(old: String, new: String) -> Bool {
-        let common = zip(old, new).prefix(while: { $0.0 == $0.1 }).count
-        let removed = String(old.dropFirst(common))
-        let added = String(new.dropFirst(common))
-        if removed.isEmpty { document.insertText(added) }
-        else {
-            let result = DeletionStrategy.apply(source: removed, replacement: added,
-                                                snapshot: DocumentSnapshot(document), document: document, allowInsertionOnly: false)
-            guard result == .replaced else { return false }
+        // This is an owned, actively composing run. Replacing the whole run is
+        // more reliable than asking the host to delete only a changed suffix:
+        // documentContextBeforeInput can briefly lag behind insertText on iOS.
+        // Falling back to insertText in that window would expose raw jamo.
+        if !old.isEmpty, let before = document.before,
+           !DocumentSnapshot.exact(String(before.suffix(old.count)), old) {
+            return false
         }
+        for _ in old { document.deleteBackward() }
+        document.insertText(new)
         let base = old.isEmpty ? input.typed : String(input.typed.dropLast(old.count))
         input.set(base + new)
         return true
