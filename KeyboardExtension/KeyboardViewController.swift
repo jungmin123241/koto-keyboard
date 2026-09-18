@@ -22,6 +22,7 @@ final class KeyboardViewController: UIInputViewController {
     private let candidate = UIButton(type: .system)
     private let status = UILabel()
     private var heightConstraint: NSLayoutConstraint?
+    private static let hangulJamo = Set("ㄱㄲㄳㄴㄵㄶㄷㄸㄹㄺㄻㄼㄽㄾㄿㅀㅁㅂㅃㅄㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -182,7 +183,7 @@ final class KeyboardViewController: UIInputViewController {
         if value == "\n" {
             document.insertText(value); composer.reset(); input.reset(); return
         }
-        if korean && !symbols && value.count == 1 && !value.trimmingCharacters(in: .whitespaces).isEmpty {
+        if Self.isHangulJamo(value) {
             if composer.text.count >= 40 { composer.reset() }
             let old = composer.text
             composer.append(value.first!)
@@ -197,6 +198,11 @@ final class KeyboardViewController: UIInputViewController {
             composer.reset(); document.insertText(value); input.set(input.typed + value)
         }
         if shifted { shifted = false; buildKeys() }
+    }
+
+    private static func isHangulJamo(_ value: String) -> Bool {
+        guard value.count == 1, let character = value.first else { return false }
+        return hangulJamo.contains(character)
     }
 
     private func replaceComposition(old: String, new: String) -> Bool {
